@@ -1,0 +1,48 @@
+
+Difference between var let const see in 1.8
+_____________________________________________________________________
+|            |       var          |      let          |     const          |
+|------------|--------------------|-------------------|--------------------| 
+|Scope       | Function Scope     | Block Scope       | Block Scope        |
+|            |                    |                   |                    |
+|------------|--------------------|-------------------|--------------------| 
+|            |                    |                   |                    |
+|Redeclaring | possible in same   | not allowed in    |  not allowed in    |
+|            |      scope         |   same scope      |    same scope      |
+|------------|--------------------|-------------------|--------------------|
+|            |                    |                   |                    |
+|Reassignment| allowed in scope   | allowed in scope  |  not allowed       |
+|------------|--------------------|-------------------|--------------------|
+|            |                    |                   |                    |
+|Hoisting    | Hosted at top Can  | Hosted at top can | Hosted at top can  |      
+|            |   be used before   | not be used before| not be used before |
+|            |  the declaration.  | the declaration.  | the declaration.   |
+|------------|--------------------|-------------------|--------------------|
+
+
+
+
+-----------------------DETAILS.---------------------------------
+
+
+---Scope---------------------------------------------------------------------------
+  1. var -- Variables declared with 'var' have function scope. 
+    This means they are visible throughout the entire function in which they are declared.
+    If a variable is declared inside a block (like an if statement or a loop),
+    it is still accessible throughout the entire function.
+   2. let and const -- Variables declared with 'let' and 'const' have block scope.
+        This means they are only accessible within 
+        the block (enclosed by curly braces) in which they are defined. 
+        This provides more predictable and safer scoping behavior compared to var.
+  ---Redeclaring ----------------------------------------------------------------------------------------------------------------------------------------------
+   1. var -- With var, we can redeclare a variable within the same scope without any errors.
+   2. let -- With let, attempting to redeclare a variable within the same scope will result in an error. This helps prevent accidental variable name collisions.
+   3. const -- Similarly, with const, attempting to redeclare a variable or change its value after initialization will result in errors.
+  ---Reassigning --------------------------------------------------------------------------------------
+   1. var and let -- let, var allows you to reassign the value of a variable within the same scope.
+   2. const -- With const, once a variable is assigned a value, you cannot reassign it to a different value. Attempting to do so will result in a TypeError.
+
+   ---Hoisting----------------------------------------------------------
+   1. var -- With var, the declaration is hoisted to the top, but only the declaration is hoisted, not the initialization. So, when you try to access the variable before its declaration, you get undefined.
+   2. let -- With let, the variable is also hoisted, but it's in the temporal dead zone until the actual declaration. Trying to access it before the declaration results in a ReferenceError.
+   3. const -- Similar to let, const is hoisted to the top, but it's also in the temporal dead zone until the actual declaration. Trying to access it before the declaration results in a ReferenceError.

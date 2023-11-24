@@ -1,0 +1,51 @@
+
+--------What is Variable?
+-------------------------
+
+A variable is a container for a value, 
+like a number we might use in a sum, 
+or a string that we might use as part of a sentence.
+--------------
+variable  refers to a named storage location used to store data in a computer program. 
+
+example---
+        2002 represents a data value stored in a memory location within a computer's storage.
+         To manage and access this data, we create variables, assigning them names. 
+         These names serve as references to the stored data, allowing for easier manipulation within a program.
+
+-------------------------------------
+--------Variables in JavaScript.
+-------------------------------------
+In JavaScript, var, let, and const are keywords used for variable declaration, 
+each serving specific purposes within the language.
+
+JavaScript is a dynamically typed language, which means we don't need to explicitly specify the data type of a variable.
+
+example---
+      var a=5;   also see in program. 1.6
+
+      var - use for declaring amd making variable
+      a - variable name
+      5 - assinged data value
+
+-------------------------------------
+--------Facts about JS variable.
+-------------------------------------
+
+=> JS variables are case sensitive.
+    - means art ans Art both are different.
+
+=> Variable names can only contain letters 
+     -(a-z, A-Z), digits (0-9), underscores (_), or dollar signs ($).
+     -They cannot start with a digit.
+     - we can't use reserved word as variable name.
+     - when we don't assign any value to variable, then its value is undefined.
+
+     - tips -- Don't use underscores at the start of variable names.
+            -- Use camelCaseNotation.
+
+
+
+
+
+

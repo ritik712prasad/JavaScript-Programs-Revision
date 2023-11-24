@@ -1,0 +1,50 @@
+<!-- In JavaScript, var, let, and const are keywords used for variable declaration -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.6 var let const</title>
+    <script>
+        // use console for better experience because we can see error messages.
+        // declaring single variable 
+        const nth=1089;
+        document.write(nth);  // O/p 1089 but not changable 
+        document.write("<br>");
+        var first;   //declaring empty variable
+        let second; //declaring empty variable
+    
+        document.write(first);    // O/p undefined 
+        document.write("<br>");  // line break
+        document.write(second); // O/p undefined
+
+        //  initializing variable
+        document.write("<br>");
+
+        first=56;
+        second="ritik";
+        document.write(second);   // O/p ritik
+        document.write(first);   // O/p 56 
+       
+        // declaring and initializing a single variable 
+         var sum1=23;
+         let sum2=32;
+
+         let total = sum1 + sum2;
+         document.write("<br> Total = sum1 +sum2 is ");
+         document.write(total);  // O/p 55 
+
+         // also declare and initilize multiple variable in single line
+         let x=5,y,z=" ";
+         document.write("<br>");
+         document.write(x,z,y);  // O/p 5 undefined 
+         console.log("success learned");
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
