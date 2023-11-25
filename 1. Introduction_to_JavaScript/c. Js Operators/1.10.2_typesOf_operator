@@ -1,0 +1,163 @@
+note that this page need more details to update..
+i will add in future
+aslo learn how data is stored in bit format in details.
+-----------------------------
+JavaScript encompasses numerous operators. Explore the comprehensive list at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators . 
+However, our current focus lies primarily on following operators.
+
+
+  JavaScript operators are categorized into these types:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+1. Assignment operators
+2. Comparison operators
+3. Arithmetic operators
+4. Bitwise operators
+5. Logical operators
+6. Biglnt operators
+7. String operators
+8. Conditional(ternary) operators
+9. Comma operators
+10. Unary operators
+11. Relational operators
+and more....
+----------------------------------------------------------------------------------------------------------------
+Assignment operators
+________________________________________________________________________________________________________________
+An assignment operator assigns a value to its left operand based on the value of its right operand. 
+The simple assignment operator is equal (=), which assigns the value of its right operand to its left operand. 
+That is, x = f() is an assignment expression that assigns the value of f() to x.
+
+it includes :- 
+-----------------------------------------------------------------------------------------
+Name                             |  shorthand         | Meaning     | Example           |     also see in this 1.11.1
+-----------------------------------------------------------------------------------------
+Assignment                       | x =f(x)            | x=f(x)      | let x = 5         |
+Addition assignment              | x +=f(x)           | x= x + f(x) | let x += 5        |
+Subtraction assignment           | x -=f(x)           | x= x - f(x) | let x -= 5        |
+Multiplication assignment        | x *=f(x)           | x= x * f(x) | let x *= 5        |
+Division assignment              | x /=f(x)           | x= x / f(x) | let x /= 5        |
+Remainder assignment             | x %=f(x)           | x= x % f(x) | let x %= 5        |
+Exponentiation assignment        | x /=f(x)           | x= x / f(x) | let x /= 5        |
+Left shift assignment            | x **=f(x)          | x= x ** f(x)| let x **= 5       |
+Right shift assignment           | x >>=f(x)          | x= x >> f(x)| let x >>= 5       |
+Unsigned right shift assignment  | x >>>=f(x)         | x=x >>> f(x)| let x >>>= 5      |
+Bitwise AND assignment           | x &=f(x)           | x= x & f(x) | let x &= 5        |
+Bitwise XOR assignment           | x ^=f(x)           | x= x ^ f(x) | let x ^= 5        |
+Bitwise OR assignment            | x |=f(x)           | x= x | f(x) | let x |= 5        |
+Logical AND assignment           | x &&=f(x)          | x= x && f(x)| let x &&= 5       |
+Logical OR assignment            | x ||=f(x)          | x= x || f(x)| let x ||= 5       |
+Nullish coalescing assignment    | x ??=f(x)          | x= x ?? f(x)| let x ??= 5       |
+-----------------------------------------------------------------------------------------
+Comparison operators
+-----------------------------------------------------------------------------------------
+A comparison operator compares its operands and returns a logical value based on whether the comparison is true.
+ The operands can be numerical, string, logical, or object values.
+ Strings are compared based on standard lexicographical ordering, using Unicode values.
+  In most cases, if the two operands are not of the same type, JavaScript attempts to convert them to an appropriate type for the comparison. 
+  This behavior generally results in comparing the operands numerically. The sole exceptions to type conversion within comparisons involve the === and !== operators, which perform strict equality and inequality comparisons. 
+  These operators do not attempt to convert the operands to compatible types before checking equality.
+  following are comparison operators :-
+
+  1. equal( == )                returns true if the operands are equal 
+  2. not equal( != )            returns true if the operands are not equal.
+  3. strict equal( === )        returns true if the operands are equal and of the same type. means compairs data and its type both.
+  4. strict notequal( !== )     returns true if the operands are not equal and are of different type. means compairs data and its type both.
+  5. greater than( > )          returns true if the left operand is greater than to the right operand.
+  6. greater than or equal( >= )returns true if the left operand is greater than or equal to the right operand.
+  7. less than( < )             returns true if the left operand is less than to the right operand.
+  8. less than or equal( <= )   returns true if the left operand is less than or equal to the right operand.
+
+-------------------------------------------------------------------------------------------------------------------------
+ -- note ------ => is not comparision operator but it is notation for arrow function.
+-------------------------------------------------------------------------------------------------------------------------
+Arithmetic operators
+-------------------------------------------------------------------------------------------------------------------------
+
+  1. Addition( + )            The addition ( + ) operator produces the sum of numeric operands or string concatenation.
+  2. Subtraction(-)           The subtraction (-) operator subtracts the two operands, producing their difference.
+  3. Multiplication( * )      The multiplication ( * ) operator produces the product of the operands.
+  4. Division( / )            The division ( / ) operator produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.  
+  5. Remainder( % )           Binary operator. Returns the integer remainder of dividing the two operands.
+
+  6. Unary plus ( + )         Unary operator. Attempts to convert the operand to a number, if it is not already.
+  7. Unary negation( - )      Unary operator. Returns the negation of its operand.         
+  8. Exponentiation( ** )     Calculates the base to the exponent power, that is, base^exponent.
+
+  9. Increment ( ++ )         Unary operator. Adds one to its operand. If used as a prefix operator( ++x ), returns the value of its operand after adding one; if used as a postfix operator ( x++ ), returns the value of its operand before adding one.
+  10. Decrement ( -- )        Unary operator. Subtracts one from its operand. The return value is analogous to that for the increment operator.
+  --------------
+  note learn about 'TypeError' 
+  -------------------------------------------------------------------------------------------------------------------------------------------------------
+   Bitwise operators
+   -------------------------------------------------------------------------------------------------------------------------------------------------
+  A bitwise operator treats their operands as a set of 32 bits (zeros and ones), rather than as decimal, hexadecimal, or octal numbers.
+  For example, the decimal number nine has a binary representation of 1001.
+  Bitwise operators perform their operations on such binary representations, but they return standard JavaScript numerical values.
+
+  1. Bitwise OR( | )                     Returns a zero in each bit position for which the corresponding bits of both operands are zeros. example-- 15 | 9 is 15.	explanation -- 1111 | 1001 = 1111 result = 1111 in decimal 15. 
+  2. Bitwise AND( & )                    Returns a one in each bit position for which the corresponding bits of both operands are ones.   example-- 15 & 9 is 9.	explanation -- 1111 & 1001 = 1001 result = 1001 in decimal 9.
+  3. Bitwise XOR( ^ )                    Returns a zero in each bit position for which the corresponding bits are the same.[Returns a one in each bit position for which the corresponding bits are different.] Example-- 15 ^ 9 is 6.  explanation -- 1111 ^ 1001 = 0110 result = 0110 in decimal 6.
+  4. Bitwise NOT( ~ )                    Inverts the bits of its operand. example--  ~9 is .	
+  5. Left shift( << )                    This operator shifts the first operand the specified number of bits to the left. Excess bits shifted off to the left are discarded. Zero bits are shifted in from the right.
+  6. Right shift( >> )                   The right shift ( ) operator returns a number or Biglnt whose binary representation is the first operand shifted by the specified number of bits to the right. Excess bits shifted off to the right are discarded, and copies of the leftmost bit are shifted in from the left. This operation is also called "sign-propagating right shift" or "arithmetic right shift", because the sign of the resulting number is the same as the sign of the first operand. 
+  7. Unsigned right shift( >>> )         The unsigned right shift ( ) operator returns a number whose binary representation is the first operand shifted by the specified number of bits to the right. Excess bits shifted off to the right are discarded, and zero bits are shifted in from the left. This operation is also called "zero-filling right shift", because the sign bit becomes e , so the resulting number is always positive. Unsigned right shift does not accept Bjglnt values.
+  8. Sign-propagating right shift( >> )  This operator shifts the first operand the specifiednumber of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left.
+  9. Zero-fill right shift( >>> )        This operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left.
+
+  --------------------------------------------------------------
+  note -- also remember in bitwise operation, we are dealing with 32 bit for 15 and 9.
+   means. 15 -- 0000 0000 0000 0000 0000 0000 0000 1111
+           9 -- 0000 0000 0000 0000 0000 0000 0000 1001
+           _______________________________________________
+    15 | 9   -- 0000 0000 0000 0000 0000 0000 0000 1111
+  ----------------------------------------------------------------------------------------------------------------------------
+  Logical operators
+  ----------------------------------------------------------------------------------------------------------------------------
+  1. Logical AND( && )         when used with Boolean values, && returns true if both operands are true; otherwise, returns false.
+  2. Logical OR( || )          when used with Boolean values, || returns true if either operand is true; if both are false, returns false.
+  3. Logical NOT( ! )          return true if expressioni s false.
+  ---------------------------------------------------------------------------------------------------------------------------
+  Biglnt operators
+  ---------------------------------------------------------------------
+
+  ---------------------------------
+  String operators
+  ----------------------------------
+  String operators( + ) which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings.
+  -------------------------------------------------------------------------------------------
+  Conditional(ternary) operators
+  -----------------------------------------------------------------------------------------
+  The conditional operator is the only JavaScript operator that takes three operands.
+  The operator can have one of two values based on a condition.
+
+  The syntax is: condition ? val1 : val2
+               If condition is true, the operator has the value of val1. Otherwise it has the value of val2. You can use the conditional operator anywhere you would use a standard operator.
+----------------------------------------------------
+Comma operators
+---------------------------------------------------
+The comma operator (,) evaluates both of its operands and returns the value of the last operand. This operator is primarily used inside a for loop, to allow multiple variables to be updated each time through the loop. It is regarded bad style to use it elsewhere, when it is not necessary. Often two separate statements can and should be used instead.
+
+For example, if a is a 2-dimensional array with 10 elements on a side, the following code uses the comma operator to update two variables at once. The code prints the values of the diagonal elements in the array:
+------------------------------------------------------------------------------------------------
+Unary operators
+--------------------------------------------------------------------------------------------
+ A unary operation is an operation with only one operand.
+   1. delete
+   2. typeof
+   3. void
+-------------------------------------------------------------------------------------------------
+ Relational operators
+ -------------------------------------------------------------------------------
+ A relational operator compares its operands and returns a Boolean value based on whether the comparison is true. 
+     1. in
+     2. instanceof
+----------------------------------------------------------------------------------------------
+Some Other
+----------------------------------------------------------------------------------------------
+ 1. Grouping operator
+    The grouping operator ( ) controls the precedence of evaluation in expressions. For example, you can override multiplication and division first, then addition and subtraction to evaluate addition first
+ 2. new operator
+    the new operator to create an instance of a user-defined object type or of one of the built-in object types.
+

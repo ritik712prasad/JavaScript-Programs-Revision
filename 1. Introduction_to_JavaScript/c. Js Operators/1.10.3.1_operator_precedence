@@ -1,0 +1,48 @@
+
+
+Operator Precenence
+
+
+1. Assignment operators (`=`)
+   - Assigns a value to a variable.
+   - Example: `let x = 5;`
+
+2. Comparison operators (`<`, `>`, `<=`, `>=`, `instanceof`, `in`, `==`, `===`, `!=`, `!==`)
+   - Compare values and return a Boolean result.
+   - Example: `x > 5`
+
+3. Arithmetic operators (`+`, `-`, `*`, `/`, `%`)
+   - Perform basic arithmetic operations.
+   - Example: `result = a + b;`
+
+4. Bitwise operators (`&`, `^`, `|`, `<<`, `>>`, `>>>`)
+   - Perform bit-level operations on integers.
+   - Example: `result = a & b;`
+
+5. Logical operators (`&&`, `||`)
+   - Combine multiple conditions and return a Boolean result.
+   - Example: `result = (x > 0) && (y < 10);`
+
+6. Biglnt operators (Not specified in the list)
+   - Used for operations on BigInts.
+
+7. String operators (`+`)
+   - Concatenate strings.
+   - Example: `let greeting = "Hello" + " " + "World";`
+
+8. Conditional (ternary) operator (`? :`)
+   - A shorthand way of writing an `if-else` statement.
+   - Example: `result = (condition) ? "true case" : "false case";`
+
+9. Comma operator (`,`):
+   - Evaluates multiple expressions and returns the result of the last expression.
+   - Example: `let result = (x++, y++);`
+
+10. Unary operators (`+`, `-`, `++`, `--`, `!`):
+    - Operate on a single operand.
+    - Example: `let negated = -x;`
+
+11. Relational operators (`<`, `>`, `<=`, `>=`):
+    - Compare values and return a Boolean result.
+    - Example: `result = a < b;`
+

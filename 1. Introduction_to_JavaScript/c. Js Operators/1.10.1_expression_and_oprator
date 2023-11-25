@@ -1,0 +1,28 @@
+
+
+----What is Expression?
+_____________________________________
+-an expression is a valid unit of code that resolves to a value.
+-Expression in programming is a combination of one or more values, 
+variables, operators, and functions that, when evaluated, produces
+a single value. Expressions can be simple or complex,
+ but they are always something that results in a value.
+
+ 5 + 3       // Results in the value 8
+x * 10      // If 'x' is a variable, this represents a value based on the current value of 'x'
+Math.sqrt(25)  // Results in the value 5
+let result = 5 + 3;  // The expression (5 + 3) resolves to the value 8, which is then assigned to the variable 'result'.
+
+
+----what is Operator?
+_____________________________________
+an operator is a symbol or keyword that performs 
+operations on one or more operands.
+  (Operands can be values, variables, or expressions,
+        and the result of an operation is a new value.)
+  
+  --example--
+                             5 + value1
+
+        In this, expression '5' and 'value1' are operands
+                       and  '+' is operator. 
