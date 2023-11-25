@@ -1,0 +1,58 @@
+---------------------------------
+what is DATA TYPE in JavaScript?
+---------------------------------
+
+a data type is a classification that specifies which type of value a variable can hold,
+ what operations can be performed on it, and how the data is stored. 
+ Data types are essential for understanding and managing the data used in computer programs.
+
+------------------------------
+ why we mainly need data type?
+ -----------------------------
+  1. To Optimize Memory Usages.
+       Suppose I need to store the number 44, which can be accommodated without specifying a data type.
+       The storage size could range from 64 bits, 128 bits, 32 bits, and so forth. In this context, using 32 bits is efficient as it minimizes storage requirements.
+       By explicitly or implicitly declaring the variable with an integer data type, it consistently allocates 32 bits of storage.
+       This approach is advantageous for efficiently storing a specific set of data, reducing unnecessary wastage of storage space.
+  2. To Manage Data Properly.
+  3. Data Integrity
+  and so on.
+
+  ----------
+  note -- 1. also know about data structues.
+          2. JavaScript is a dynamic language with dynamic types. 
+             Variables in JavaScript are not directly associated with any particular value type,
+             and any variable can be assigned (and re-assigned) values of all types:
+          3. JavaScript is also a weakly typed language, which means it allows implicit type conversion 
+             when an operation involves mismatched types, instead of throwing type errors.
+             For symbols and BigInts, JavaScript has intentionally disallowed certain implicit type conversions.
+
+  -------------------
+  JavaScript DataType
+  -------------------
+  Primary Data Types
+
+
+  1. Number      Represents numeric values, including integers and floating-point numbers.
+  2. String      Represents sequences of characters.
+  3. Boolean     Represents a logical entity and can have two values: true or false.
+  4. Undefined   Represents a variable that has been declared but not assigned a value.
+  5. Symbol      Represents unique and immutable values.
+  6. Null        Represents the intentional absence of any object value.
+  7. BigInt      Represents arbitrary precision integers, introduced in ECMAScript 2020.
+                 BigInt allows you to represent integers with arbitrary precision, meaning you can work with very large integer values without losing precision.
+
+  non - primary data type
+   
+   ♣️ Object       In JavaScript, an object is a complex data type that allows you to group related data and functions together. Objects are used to represent real-world entities and are a fundamental part of the language. 
+                  let person = {
+                                  name: "John",
+                                  age: 30,
+                                  isStudent: false,
+                                  sayHello: function() {
+                                  console.log("Hello!");
+                                   }
+                                };
+
+
+

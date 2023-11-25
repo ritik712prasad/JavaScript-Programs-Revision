@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple dataType example</title>
+    <script>
+        // learn about object, array and other non primitive dataType in detail after this.
+
+        // not specific datatype is permanent for one variable can be modified
+        let foo = 42; // foo is now a number
+        foo = "bar"; // foo is now a string
+        foo = true; // foo is now a boolean
+
+        //a weekely typed language
+        const zoo = 42; // zoo is a number
+        const result = zoo + "1"; // JavaScript coerces zoo to a string, so it can be concatenated with the other operand
+        console.log("Result ",result); // 421 which is string
+        console.log("Result datatype is : ", typeof result);                     // coerces meaning : the automatic conversion of one type to another.
+//------------------------------------------------------------------
+        // Primitive data type
+//------------------------------------------------------------------
+        // Number
+          let numericValue = 42; // Integer
+          let floatValue = 3.14; // Floating-point number
+          let negativeValue = -44;// negative value , just put - sign before number just like math
+
+        // String
+          let stringValue = "Hello, World!";
+
+        // Boolean
+          let isTrue = true;
+          let isFalse = false;
+
+        // Undefined
+          let undefinedValue; // Variable declared but not assigned a value
+
+        // Symbol
+          let uniqueSymbol = Symbol("unique");
+
+        // Null
+          let nullValue = null; // Represents the absence of any object value
+
+        // BigInt 
+        //ending with n    
+          let bigIntValue = BigInt("9007199254740991"); //see Below
+
+        // Displaying the values and their types
+        //the typeof operator is used to determine the data type of a variable or an expression. It is a unary operator that returns a string representing the type of the operand.
+          console.log("Number:", numericValue, typeof numericValue);
+          console.log("Float:", floatValue, typeof floatValue);
+          console.log("Negative Number:", negativeValue, typeof negativeValue);
+          console.log("String:", stringValue, typeof stringValue);
+          console.log("Boolean (true):", isTrue, typeof isTrue);
+          console.log("Boolean (false):", isFalse, typeof isFalse);
+          console.log("Undefined:", undefinedValue, typeof undefinedValue);
+          console.log("Symbol:", uniqueSymbol, typeof uniqueSymbol);
+          console.log("Null:", nullValue, typeof nullValue);
+          console.log("BigInt:", bigIntValue, typeof bigIntValue);
+//------------------------------------------------------------------------
+//extra masala
+//------------------------------------------------------------------------
+
+          /*BigInt allows you to represent integers with arbitrary precision,
+           meaning you can work with very large integer values without losing precision.*/
+
+           //Number has limitation to represent the value we can check by the following
+           console.log("Maximum value that can hold by a number DataType :",Number.MAX_SAFE_INTEGER); // 9007199254740991
+           console.log("Maximum value that can hold by a number DataType :",Number.MIN_SAFE_INTEGER); // -9007199254740991
+
+           //After this range, precision may be compromised.
+           let value1=123456789012345; //o/p 123456789012345
+           console.log(value1);//hold write value within the range
+           let value2=123456789012345678;// o/p 123456789012345680
+
+           console.log(value2);//after the range may give different number Lost Accuracy
+           let value3=BigInt("123456789012345678"); // o/p 123456789012345678n
+           console.log(value3);//Maintains precision even it Exceed Number Datatype range
+
+           //single quotes (') and double quotes (") in string
+           /*both single quotes (') and double quotes (") can be used to create strings, and they are largely interchangeable. 
+           There is no functional difference between the two when it comes to creating basic strings. 
+           You can use either style to define a string*/
+           let singleQuoted = 'This is a string with single quotes.';
+           let doubleQuoted = "This is a string with double quotes.";
+           console.log("singleQuoted String :- ",singleQuoted);
+           console.log("DoubleQuoted String:- ",doubleQuoted);
+           console.log("both single quotes and double quotes can be used to create strings- no differencebetween them");
+           // also We can use Template literals backticks( ` ) for  string declaration
+    
+           let backticksString = `ritik`;
+           console.log("Backticks String: ", backticksString);
+           console.log("Backticks allows embedding variables or expressions Directly within the string using ${variableName} .");
+           let backticksTemplateString = `${backticksString} prasad`;// like this
+           console.log("backticks Template String : ",backticksTemplateString);
+           
+           
+
+
+           //but If we need to use quotes within our string, we can avoid escaping them by using a combination of single and double quotes.
+           //example
+           let stringWithSingleQuotes = "This string contains 'single quotes' without escaping.";
+           let stringWithDoubleQuotes = 'This string contains "double quotes" without escaping.';
+           console.log("string With Single Quotes :- ",stringWithSingleQuotes);
+           console.log("string With Double Quotes :- ",stringWithDoubleQuotes);
+
+           //Also if we put '\' before the quotation we can forcefully implement that in any string.
+           let forcefullyImplementQuotation = 'ritik\'s code';//the backslash (\) is an escape character
+           console.log("forcefully Implement Quotation :- ",forcefullyImplementQuotation);
+
+           //If you want to include a literal backslash in your string, you need to escape it by using another backslash before it. 
+           let stringWithBackslash = "This is a string with a backslash: \\";
+           console.log(stringWithBackslash);  // Outputs: This is a string with a backslash: \
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
