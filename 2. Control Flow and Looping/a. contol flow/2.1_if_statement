@@ -1,0 +1,85 @@
+
+----------------------
+'if' Statement:
+----------------------
+In JavaScript, the if statement is used for conditional execution of code. 
+It allows you to execute a block of code if a specified condition is true.
+          means - The if(...) statement evaluates a condition in parentheses and, if the result is true, executes a block of code. 
+                 The if (…) statement evaluates the expression in its parentheses and converts the result to a boolean.
+--condition -- An expression that is considered to be either truthy_ or falsy.
+------
+syntax --
+------
+       if (condition) 
+       {
+                // Code to be executed if the condition is true
+       }
+       also for lingle line we can use if condition withiout this '{' '}'
+--------------------------------
+if...else statement
+---------------------------------
+ The if...else statement executes a statement if a specified condition is truthy. 
+ If the condition is falsy, another statement in the optional else clause will be executed.
+
+------
+syntax --
+------
+       if (condition) 
+        {
+                    // Code to be executed if the condition is true
+        } 
+        else 
+        {
+                    // Code to be executed if the condition is false
+        }
+--------------------------------
+ if....else if statement
+---------------------------------
+The if-else if-else statement in JavaScript allows us to handle multiple conditions in a more structured manner. 
+It's an extension of the basic if-else statement and is useful when we have more than two possible outcomes. 
+-------
+syntax --
+------
+          if (condition1) 
+          {
+                     // Code to be executed if condition1 is true
+          } 
+          else if (condition2) 
+          {
+                     // Code to be executed if condition2 is true
+          } 
+          else if (condition3) 
+          {
+                    // Code to be executed if condition3 is true
+          } //... we can have more else if clauses
+
+         else {
+                   // Code to be executed if none of the conditions are true
+              }
+--------------------------------
+Nested if statements 
+---------------------------------
+Nested if statements in JavaScript involve placing one if statement inside another. This is done to create more complex conditions and execute different blocks of code based on multiple conditions. 
+------
+syntax --
+------
+           if (condition1)
+            {
+                // Code to be executed if condition1 is true
+
+                if (condition2)
+                    {
+                         // Code to be executed if both condition1 and condition2 are true
+                        
+                    } 
+                    else
+                    {
+                         // Code to be executed if condition1 is true but condition2 is false
+                    }
+
+            } 
+            else
+             {
+                // Code to be executed if condition1 is false
+             }
+
