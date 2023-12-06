@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.19</title>
+    <script src="1.19_Data_type_conversion.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background:  linear-gradient(to top left,#8ce9ec,#addee1,rgb(202, 231, 231));
+        }
+        .content1{
+            display: flex;
+            justify-content: center;
+            max-width: 100vw;
+            /* border: 4px dotted rgb(87, 84, 84); */
+        }
+        h1,h2,h3{
+            text-align: center;
+           
+        }
+        #leftDiv
+        {
+            float: left;
+            width: 42%;
+            height:400px;
+            background-color: rgb(202, 242, 222);
+            border: 4px dotted rgb(87, 84, 84);
+            border-radius: 30%;
+        }
+        #rightDiv
+        {
+            float: right;
+            width: 42%;
+            height:398px;
+            background-color: rgb(202, 242, 222);
+            border: 4px dotted rgb(87, 80, 80);
+            border-radius: 25%;
+        }
+        .para{
+            font-size: 30px;
+            color: rgb(115, 115, 200);
+            padding: 2%;
+        }
+        .defination{
+            height: auto;
+            width: auto;
+            font-size: 23px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>TYPE CONVERSION</h1>
+    <p class="defination">
+        Type conversion (or typecasting) means transfer of data from one data type to another.
+     </p>  
+    <h1> JavaScript uses two types of type conversion:</h1>
+    <h3>1. Implicit Type Conversion (Coercion):</h3>
+     <h3>2. Explicit Type Conversion:</h3> 
+      
+<div class="content1">
+    <div id="leftDiv">
+     <h2>Implicit Type Conversion (Coercion):</h2>
+     <p class="para">
+        This occurs when JavaScript <b>automatically</b>  converts one data type to another without any explicit instruction from the developer.
+     </p>
+    </div>
+    <div id="rightDiv">
+        <h2>Explicit Type Conversion:</h2>
+     <p class="para">
+        This involves manually converting one data type to another using functions or methods like parseInt(), parseFloat(), String().
+     </p>
+    </div>
+        
+    </div> 
+    <p style="float: right;padding-right: 3%;">inspect for js output</p>  
+</body>
+</html>
